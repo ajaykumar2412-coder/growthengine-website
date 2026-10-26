@@ -1,0 +1,9 @@
+{
+  "stop_on_reply": true,
+  "steps": [
+    { "delay_minutes": 0,    "template": "lead_welcome",    "language": "en", "params": ["{name}"] },
+    { "delay_minutes": 60,   "template": "lead_reminder_1", "language": "en", "params": ["{name}", "{service}"] },
+    { "delay_minutes": 1440, "template": "lead_reminder_2", "language": "en", "params": ["{name}"] },
+    { "delay_minutes": 4320, "template": "lead_final",      "language": "en", "params": ["{name}"] }
+  ]
+}
