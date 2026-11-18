@@ -1,0 +1,2 @@
+# Block internal files from public access
+RedirectMatch 404 ^/(editor\.html|README\.md|lead-reminders|tools|elementor|\.git)(/.*)?$
