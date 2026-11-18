@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Illustration of the Growth Engine team planning ads and reviewing a growth dashboard">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#EDE7FF"/><stop offset=".55" stop-color="#E3F7FB"/><stop offset="1" stop-color="#FBE6F6"/></linearGradient>
+    <linearGradient id="scr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E1B3A"/><stop offset="1" stop-color="#2C2758"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#8B5CF6"/><stop offset="1" stop-color="#FF3DCB"/></linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B5CF6" stop-opacity=".45"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></linearGradient>
+    <linearGradient id="shirtA" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B5CF6"/><stop offset="1" stop-color="#6D28D9"/></linearGradient>
+    <linearGradient id="shirtB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#0E9FB8"/></linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg)"/>
+  <circle cx="330" cy="70" r="90" fill="#C4A8FF" opacity=".25"/>
+  <circle cx="40" cy="430" r="110" fill="#22D3EE" opacity=".15"/>
+
+  <!-- dashboard screen -->
+  <g transform="translate(40 50)">
+    <rect width="320" height="200" rx="18" fill="url(#scr)"/>
+    <rect x="16" y="16" width="70" height="8" rx="4" fill="#fff" opacity=".35"/>
+    <rect x="16" y="32" width="44" height="14" rx="4" fill="#fff" opacity=".9"/>
+    <rect x="236" y="14" width="68" height="22" rx="11" fill="#22C55E" opacity=".2"/>
+    <text x="270" y="29" font-family="system-ui,sans-serif" font-size="11" font-weight="700" fill="#4ADE80" text-anchor="middle">▲ 4.8x</text>
+    <g stroke="#fff" stroke-opacity=".08"><path d="M16 80H304M16 115H304M16 150H304"/></g>
+    <path d="M16 170 L60 158 L104 150 L148 128 L192 120 L236 92 L280 70 L304 60 L304 184 L16 184Z" fill="url(#area)"/>
+    <path d="M16 170 L60 158 L104 150 L148 128 L192 120 L236 92 L280 70 L304 60" fill="none" stroke="url(#line)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="280" cy="70" r="6" fill="#fff" stroke="#FF3DCB" stroke-width="3"/>
+  </g>
+
+  <!-- floating chips -->
+  <g font-family="system-ui,sans-serif" font-size="12" font-weight="700">
+    <g transform="translate(14 230)"><rect width="104" height="34" rx="17" fill="#fff"/><circle cx="18" cy="17" r="9" fill="#8B5CF6"/><text x="34" y="21" fill="#1B1830">+842 leads</text></g>
+    <g transform="translate(278 222)"><rect width="108" height="34" rx="17" fill="#fff"/><circle cx="18" cy="17" r="9" fill="#22D3EE"/><text x="34" y="21" fill="#1B1830">Ads live</text></g>
+  </g>
+
+  <!-- desk -->
+  <rect x="20" y="420" width="360" height="16" rx="8" fill="#1E1B3A"/>
+  <rect x="60" y="436" width="10" height="64" fill="#1E1B3A"/><rect x="330" y="436" width="10" height="64" fill="#1E1B3A"/>
+
+  <!-- person A (left, pointing) -->
+  <g>
+    <path d="M70 420 C70 360 95 335 128 335 C161 335 186 360 186 420Z" fill="url(#shirtA)"/>
+    <rect x="118" y="310" width="20" height="30" rx="8" fill="#C98B6B"/>
+    <circle cx="128" cy="292" r="30" fill="#D9A07F"/>
+    <path d="M98 290 C96 262 114 252 130 252 C150 252 162 266 158 286 C150 276 132 272 112 280 C106 283 102 288 98 290Z" fill="#2B2140"/>
+    <path d="M176 368 C200 350 214 318 228 292" stroke="url(#shirtA)" stroke-width="20" stroke-linecap="round" fill="none"/>
+    <circle cx="230" cy="288" r="10" fill="#D9A07F"/>
+  </g>
+
+  <!-- person B (right, laptop) -->
+  <g>
+    <path d="M226 420 C226 368 248 345 280 345 C312 345 334 368 334 420Z" fill="url(#shirtB)"/>
+    <rect x="270" y="320" width="20" height="30" rx="8" fill="#8D5A3F"/>
+    <circle cx="280" cy="302" r="29" fill="#A86E4F"/>
+    <path d="M250 300 C246 270 262 262 280 262 C300 262 314 274 310 300 C306 290 300 284 292 282 C282 290 264 292 250 300Z" fill="#1A1426"/>
+    <rect x="300" y="290" width="22" height="22" rx="11" fill="none" stroke="#1A1426" stroke-width="0"/>
+    <!-- laptop -->
+    <path d="M232 418 L250 372 L330 372 L318 418Z" fill="#E5E7F2"/>
+    <circle cx="284" cy="395" r="5" fill="#8B5CF6"/>
+    <rect x="216" y="414" width="122" height="8" rx="4" fill="#C9CCE0"/>
+  </g>
+
+  <!-- coffee + notes -->
+  <rect x="34" y="394" width="22" height="26" rx="5" fill="#fff"/><path d="M56 400 q10 0 10 8 t-10 8" stroke="#fff" stroke-width="4" fill="none"/>
+  <rect x="190" y="408" width="34" height="12" rx="3" fill="#FF7ADB"/>
+</svg>
