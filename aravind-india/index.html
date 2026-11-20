@@ -372,6 +372,9 @@ footer{text-align:center;font-size:12px;color:var(--muted);padding:20px 16px 10p
 </div>
 
 <script>
+// Google Apps Script web-app URL (ends in /exec). See sheet-script.gs for setup.
+var SHEET_URL = 'https://script.google.com/macros/s/AKfycbyVU5cG4C5Wuf63Q0QIn_bf1rcanr8oUwud9pnUszbQ0WI_US_wGS1QBKrCvNmpNwEQ/exec';
+
 // Countdown to Day 1: 20 Nov 2026, 7:00 PM IST
 (function(){
   var t=new Date('2026-11-20T19:00:00+05:30').getTime();
@@ -414,18 +417,29 @@ document.getElementById('regForm').addEventListener('submit',function(e){
   check('profession',!!f.profession.value);
   if(!ok){first.scrollIntoView({behavior:'smooth',block:'center'});return}
 
+  var q=new URLSearchParams(location.search);
   var data={
     name:f.name.value.trim(), phone:'+91'+f.phone.value, email:email,
     reason:f.querySelector('input[name=reason]:checked').value,
     serious:f.serious.value, profession:f.profession.value,
-    utm:location.search
+    utm_source:q.get('utm_source')||'', utm_medium:q.get('utm_medium')||'',
+    utm_campaign:q.get('utm_campaign')||'', utm_content:q.get('utm_content')||'',
+    page:location.href
   };
-  // TODO: send `data` to the client's CRM / Google Sheet / webhook here.
-  // TODO: fire Meta Pixel + CAPI Lead event, e.g. fbq('track','Lead');
-  console.log('Lead',data);
 
-  f.style.display='none';
-  document.getElementById('done').style.display='block';
+  var btn=f.querySelector('button[type=submit]');
+  btn.disabled=true; btn.firstChild.nodeValue='Saving your seat… ';
+
+  function finish(){
+    // TODO: fire Meta Pixel Lead event here once the pixel is added, e.g. fbq('track','Lead');
+    f.style.display='none';
+    document.getElementById('done').style.display='block';
+    document.querySelector('.form-card').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  if(!SHEET_URL){ finish(); return; }
+  // text/plain avoids a CORS preflight, which Apps Script doesn't answer.
+  fetch(SHEET_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data),keepalive:true})
+    .then(finish,finish);
 });
 </script>
 </body>
