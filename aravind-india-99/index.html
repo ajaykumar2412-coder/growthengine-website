@@ -108,6 +108,26 @@ section h2{font-size:25px;line-height:1.2;text-align:center;margin-bottom:8px}
 .kit figure{background:rgba(255,255,255,.08);border-radius:12px;padding:6px;text-align:center}
 .kit img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px}
 .kit figcaption{font-size:11px;line-height:1.25;margin-top:5px;color:#e8def3}
+.mts{display:grid;gap:12px}
+.mt{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 4px 14px rgba(43,20,70,.05)}
+.mt>div{display:flex;gap:12px;align-items:flex-start;padding:14px 16px}
+.mt-m{background:#fdf1f1}
+.mt small{display:block;font-size:11px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:2px}
+.mt-m small{color:var(--red)}.mt-t small{color:var(--ok)}
+.mt-m p{font:600 16px/1.35 Fraunces,serif;color:var(--ink)}
+.mt-t p{font-size:14.5px;color:var(--ink)}
+.mx,.mk{flex:0 0 26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:800;color:#fff}
+.mx{background:var(--red)}.mk{background:var(--ok)}
+.gifts{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:0 6px 18px rgba(43,20,70,.06)}
+.g-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}
+.g-grid img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+.g-list{list-style:none;display:grid;gap:2px}
+.g-list li{display:flex;gap:10px;align-items:flex-start;padding:9px 4px;border-bottom:1px solid var(--line)}
+.g-list li:last-child{border-bottom:0}
+.gi{font-size:17px;line-height:1.3}
+.g-list b{display:block;font-size:15px}
+.g-list small{display:block;color:var(--muted);font-size:13px}
+.g-note{text-align:center;font-size:12.5px;color:var(--muted);margin-top:8px}
 .bon .tot{background:rgba(242,165,22,.18);font-weight:700}
 
 .coach{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;text-align:center}
@@ -267,7 +287,8 @@ footer{text-align:center;font-size:11.5px;color:var(--muted);padding:22px 16px 1
   .step p{font-size:15px}
   section .btn{max-width:440px;margin-left:auto;margin-right:auto}
 
-  .myths{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .mts{grid-template-columns:repeat(3,1fr);gap:16px}.mt{display:flex;flex-direction:column}.mt-t{flex:1}
+  .gifts{padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.g-grid{margin:0}.g-note{grid-column:1/-1;margin:0}
   .myth{margin:0;padding:20px}
 
   .car{margin:0;padding:4px 0 10px;overflow:visible;flex-wrap:wrap;justify-content:center;gap:16px}
@@ -382,12 +403,13 @@ fbq('init','1429718452517244');fbq('track','PageView');
 <section style="padding-top:0">
   <div class="wrap">
     <div class="eyebrow">Myths, busted</div>
-    <h2>What's really stopping you from healing</h2>
-    <div class="myths">
-    <div class="myth"><q>My problems are just bad luck or karma. Nothing can change.</q><p><b>Truth:</b> Many repeating patterns come from emotions we hold on to. Releasing them changes how you respond and what you attract.</p></div>
-    <div class="myth"><q>Healing needs years of therapy or expensive retreats.</q><p><b>Truth:</b> These practices take 10–15 minutes a day and you can do them at home.</p></div>
-    <div class="myth"><q>This is against my religion.</q><p><b>Truth:</b> Forgiveness, breathing and awareness are part of every faith. Nothing here asks you to change your beliefs.</p></div>
-    </div>
+    <h2>What's really stopping you from healing?</h2>
+    <p class="lead">Three beliefs that keep people stuck, and what's actually true.</p>
+    <div class="mts">
+      <div class="mt"><div class="mt-m"><span class="mx">✕</span><div><small>Myth</small><p>“My problems are just bad luck or karma. Nothing can change.”</p></div></div><div class="mt-t"><span class="mk">✓</span><div><small>Truth</small><p>Most repeating patterns come from emotions you're still holding. Release them, and how you respond and what you attract starts to change.</p></div></div></div>
+      <div class="mt"><div class="mt-m"><span class="mx">✕</span><div><small>Myth</small><p>“Healing needs years of therapy or expensive retreats.”</p></div></div><div class="mt-t"><span class="mk">✓</span><div><small>Truth</small><p>These practices take 10–15 minutes a day, at home, on your phone. You'll learn them live in 2 evenings.</p></div></div></div>
+      <div class="mt"><div class="mt-m"><span class="mx">✕</span><div><small>Myth</small><p>“This goes against my religion.”</p></div></div><div class="mt-t"><span class="mk">✓</span><div><small>Truth</small><p>Forgiveness, breathing and awareness are part of every faith. Nothing here asks you to change what you believe.</p></div></div></div>
+      </div>
   </div>
 </section>
 
@@ -403,11 +425,26 @@ fbq('init','1429718452517244');fbq('track','PageView');
       <div class="t v"><video class="tv" controls playsinline preload="metadata" src="https://dhmp.healwitharavind.com/__l5e/assets-v1/3a2cba2e-cfad-4674-ba91-20b2d24f658c/pavan-anxiety-came-down.mp4#t=0.5"></video><div class="stars">★★★★★</div><p class="res">Anxiety came down</p><div class="who"><i>P</i><div><b>Pavan</b><small>Happy Warrior · India</small></div></div></div>
       <div class="t v"><video class="tv" controls playsinline preload="metadata" src="https://dhmp.healwitharavind.com/__l5e/assets-v1/a54fb939-ca33-4d91-b4f6-4d0e36173d1e/sujatha-money-received.mp4#t=0.5"></video><div class="stars">★★★★★</div><p class="res">Money started flowing again</p><div class="who"><i>S</i><div><b>Sujatha</b><small>Happy Warrior · India</small></div></div></div>
       <div class="t v"><video class="tv" controls playsinline preload="metadata" src="https://dhmp.healwitharavind.com/__l5e/assets-v1/bbda3422-c458-45d7-a0aa-d4f5d819c90a/7000-crore-projects-attracted.mp4#t=0.5"></video><div class="stars">★★★★★</div><p class="res">Big business projects came in</p><div class="who"><i>B</i><div><b>Business owner</b><small>Happy Warrior · India</small></div></div></div>
-      <div class="t"><div class="stars">★★★★★</div><p>“Five years of stress, gone. Within one month, I feel very happy.”</p><div class="who"><i>V</i><div><b>Varsha</b><small>Happy Warrior · India</small></div></div></div>
+      
     </div>
-    <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
     <p class="btn-note">Individual experiences vary. Testimonials are personal experiences, not guarantees of results.</p>
     <div style="margin-top:16px"><button class="btn js-open" type="button">I want this healing too</button></div>
+  </div>
+</section>
+
+<!-- ================= GIFTS ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Included free</div>
+    <h2>8 healing gifts, yours when you attend</h2>
+    <p class="lead">Printable guides and vision boards to keep practising after the bootcamp.</p>
+    <div class="gifts">
+      <div class="g-grid"><img src="img/b-affirmations-kit.webp" alt="Quantum Affirmations Kit" loading="lazy"><img src="img/b-health.webp" alt="Health Affirmations" loading="lazy"><img src="img/b-love.webp" alt="Love Affirmations" loading="lazy"><img src="img/b-wealth.webp" alt="Wealth Affirmations" loading="lazy"><img src="img/b-love-vision.webp" alt="Love Vision Board" loading="lazy"><img src="img/b-vision.webp" alt="Complete Life Vision Board" loading="lazy"><img src="img/b-wealth-vision.webp" alt="Wealth Vision Board" loading="lazy"><img src="img/b-hooponopono.webp" alt="Ho'oponopono Healing Vision Board" loading="lazy"></div>
+      <ul class="g-list"><li><span class="gi">🎁</span><div><b>Quantum Affirmations Kit</b><small>Daily affirmations to start each morning calm and focused</small></div></li><li><span class="gi">🎁</span><div><b>Health Affirmations</b><small>For your body, sleep and energy</small></div></li><li><span class="gi">🎁</span><div><b>Love Affirmations</b><small>For self-love and calmer relationships</small></div></li><li><span class="gi">🎁</span><div><b>Wealth Affirmations</b><small>To shift how you think and feel about money</small></div></li><li><span class="gi">🎁</span><div><b>Love Vision Board</b><small>See the relationship you want, every day</small></div></li><li><span class="gi">🎁</span><div><b>Complete Life Vision Board</b><small>Health, love, money and purpose on one page</small></div></li><li><span class="gi">🎁</span><div><b>Wealth Vision Board</b><small>Keep your money goals in front of you</small></div></li><li><span class="gi">🎁</span><div><b>Ho'oponopono Healing Vision Board</b><small>The 4 healing phrases, ready to practise</small></div></li></ul>
+      <p class="g-note">Shared in the WhatsApp group after you attend both days.</p>
+    </div>
+    <div style="margin-top:16px"><button class="btn js-open" type="button">Get my seat + 8 gifts · ₹99</button></div>
   </div>
 </section>
 
@@ -422,15 +459,7 @@ fbq('init','1429718452517244');fbq('track','PageView');
         <div>2 live, guided sessions with Dr. Aravind<s>₹2,999</s></div>
         <div>Private WhatsApp community of Happy Warriors<span>✓</span></div>
       </div>
-      <p style="font-weight:700;margin:4px 0 8px">+ Free bonus kit when you attend</p>
-      <div class="kit">
-        <figure><img src="img/b-affirmations-kit.webp" alt="" loading="lazy"><figcaption>Quantum Affirmations Kit</figcaption></figure>
-        <figure><img src="img/b-health.webp" alt="" loading="lazy"><figcaption>Health Affirmations</figcaption></figure>
-        <figure><img src="img/b-love.webp" alt="" loading="lazy"><figcaption>Love Affirmations</figcaption></figure>
-        <figure><img src="img/b-wealth.webp" alt="" loading="lazy"><figcaption>Wealth Affirmations</figcaption></figure>
-        <figure><img src="img/b-vision.webp" alt="" loading="lazy"><figcaption>Complete Life Vision Board</figcaption></figure>
-        <figure><img src="img/b-hooponopono.webp" alt="" loading="lazy"><figcaption>Ho'oponopono Healing Vision Board</figcaption></figure>
-      </div>
+      <div class="bon"><div>Free bonus kit: 4 affirmation guides + 4 vision boards<span>✓</span></div></div>
       <div class="bon"><div class="tot">Today you pay<span>₹99</span></div></div>
       <button class="btn js-open" type="button">Reserve my seat · ₹99</button>
     </div>
