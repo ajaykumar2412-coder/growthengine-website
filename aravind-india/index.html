@@ -424,7 +424,8 @@ document.getElementById('regForm').addEventListener('submit',function(e){
     serious:f.serious.value, profession:f.profession.value,
     utm_source:q.get('utm_source')||'', utm_medium:q.get('utm_medium')||'',
     utm_campaign:q.get('utm_campaign')||'', utm_content:q.get('utm_content')||'',
-    page:location.href
+    page:location.href,
+    funnel_id:'ARVIND01'   // A2 funnel (Funnels tab) → decides the lead tab + message sequence
   };
 
   var btn=f.querySelector('button[type=submit]');

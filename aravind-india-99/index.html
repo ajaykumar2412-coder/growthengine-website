@@ -425,7 +425,8 @@ document.getElementById('regForm').addEventListener('submit',function(e){
     serious:f.serious.value, profession:f.profession.value,
     utm_source:q.get('utm_source')||'', utm_medium:q.get('utm_medium')||'',
     utm_campaign:q.get('utm_campaign')||'', utm_content:q.get('utm_content')||'',
-    page:location.href
+    page:location.href,
+    funnel_id:'ARVIND99'   // A2 funnel (Funnels tab) → decides the lead tab + message sequence
   };
 
   var btn=f.querySelector('button[type=submit]'), label=btn.firstChild.nodeValue;
@@ -455,7 +456,7 @@ document.getElementById('regForm').addEventListener('submit',function(e){
       handler:function(r){
         busy(true,'Confirming payment… ');
         // 3) Verify signature server-side and mark the Sheet row Paid
-        api({action:'verify',order:r.razorpay_order_id,payment:r.razorpay_payment_id,sig:r.razorpay_signature})
+        api({action:'verify',funnel:data.funnel_id,order:r.razorpay_order_id,payment:r.razorpay_payment_id,sig:r.razorpay_signature})
           .then(function(v){ v.ok ? success() : fail('Payment received but not confirmed. Please WhatsApp us with payment ID '+r.razorpay_payment_id); },
                 function(){ success(); }); // paid; verification can be checked later in Razorpay
       }
