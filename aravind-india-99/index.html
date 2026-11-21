@@ -3,469 +3,511 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>₹99 2-Day Heal & Manifest Bootcamp | Dr. Aravind Padmaraju</title>
-<meta name="description" content="Heal money, health & relationship blocks with Ho'oponopono in 2 live days. Just ₹99, live on Zoom, 20–21 Nov, 7 PM IST.">
+<title>Heal Money, Health &amp; Relationship Blocks · 2-Day Live Bootcamp · ₹99</title>
+<meta name="description" content="2-day live Ho'oponopono, EFT &amp; meditation bootcamp with Dr. Aravind Padmaraju. 20–21 Nov, 7 PM IST on Zoom. Just ₹99.">
 <meta name="theme-color" content="#2b1446">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#fffaf3; --ink:#24152f; --muted:#6b5b76; --brand:#2b1446; --brand2:#4a2479;
-  --gold:#f2a516; --gold-d:#d98a00; --card:#fff; --line:#eadfce; --ok:#1f9d55; --err:#c62828;
+  --bg:#fbf7f1; --ink:#22152c; --muted:#6c5d77; --line:#ebe1d3; --card:#fff;
+  --brand:#2b1446; --brand2:#4a2479; --soft:#f3ecfa;
+  --gold:#f2a516; --gold2:#d98a00; --ok:#1f9d6b; --red:#d23c3c;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:76px}
-h1,h2,h3,.btn{font-family:Poppins,system-ui,sans-serif}
-.wrap{max-width:520px;margin:0 auto;padding:0 16px}
+body{font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+h1,h2,h3,.serif{font-family:Fraunces,Georgia,serif;letter-spacing:-.01em}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px}
 img{max-width:100%;display:block}
+.eyebrow{font-size:11.5px;font-weight:700;letter-spacing:1.6px;text-transform:uppercase;color:var(--brand2);text-align:center;margin-bottom:6px}
+section{padding:34px 0}
+section h2{font-size:25px;line-height:1.2;text-align:center;margin-bottom:8px}
+.lead{text-align:center;color:var(--muted);font-size:15px;margin:0 auto 18px;max-width:460px}
 
-/* ---------- HERO (first fold) ---------- */
-.hero{background:radial-gradient(120% 80% at 50% 0%,#4a2479 0%,#2b1446 60%,#1d0d30 100%);color:#fff;padding:14px 0 22px}
-.topbar{display:flex;justify-content:space-between;align-items:center;font-size:12px;opacity:.9;margin-bottom:10px}
-.pill{background:rgba(242,165,22,.18);color:#ffd37a;border:1px solid rgba(242,165,22,.45);border-radius:99px;padding:3px 10px;font-weight:600;font-size:11.5px;letter-spacing:.3px}
-.live{display:inline-flex;align-items:center;gap:6px}
-.live:before{content:"";width:8px;height:8px;border-radius:50%;background:#ff4d4d;box-shadow:0 0 0 0 rgba(255,77,77,.7);animation:p 1.6s infinite}
-@keyframes p{70%{box-shadow:0 0 0 8px rgba(255,77,77,0)}100%{box-shadow:0 0 0 0 rgba(255,77,77,0)}}
-.hero h1{font-size:23px;line-height:1.22;font-weight:800;margin:4px 0 6px}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.sub{font-size:14px;color:#e6dcf2;margin-bottom:10px}
-.meta{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
-.meta span{background:rgba(255,255,255,.1);border-radius:8px;padding:4px 8px;font-size:12px;font-weight:500;white-space:nowrap}
+.btn{display:flex;align-items:center;justify-content:center;gap:6px;width:100%;border:0;cursor:pointer;text-decoration:none;
+  background:linear-gradient(180deg,#ffbd3a,var(--gold2));color:#2b1446;font:800 16px Inter,system-ui,sans-serif;letter-spacing:.4px;text-transform:uppercase;
+  padding:16px 18px;border-radius:999px;box-shadow:0 12px 30px -10px rgba(217,138,0,.8);transition:transform .1s}
+.btn:active{transform:scale(.98)}
+.btn s{opacity:.6;font-weight:600}
+.btn.sm{width:auto;padding:12px 18px;font-size:14px}
+.btn-note{text-align:center;font-size:12px;color:var(--muted);margin-top:8px}
 
-/* ---------- FORM ---------- */
-.form-card{background:var(--card);color:var(--ink);border-radius:16px;padding:16px 14px 14px;box-shadow:0 12px 32px rgba(0,0,0,.28)}
-.form-card h2{font-size:17px;text-align:center;margin-bottom:2px}
-.price{text-align:center;font-size:13px;color:var(--muted);margin-bottom:10px}
-.price s{color:#a08fae}
-.price b{color:var(--ok)}
-.field{margin-bottom:9px}
-.field label{display:block;font-size:12.5px;font-weight:600;margin-bottom:4px}
-.field label small{font-weight:400;color:var(--muted)}
-input,select{width:100%;font:inherit;font-size:16px;/* stops iOS zoom */padding:12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);appearance:none}
-input:focus,select:focus{outline:none;border-color:var(--brand2);box-shadow:0 0 0 3px rgba(74,36,121,.15)}
-.phone{display:flex}
-.phone span{display:flex;align-items:center;padding:0 10px;border:1.5px solid var(--line);border-right:0;border-radius:10px 0 0 10px;background:#f6f0e6;font-weight:600;font-size:15px;white-space:nowrap}
-.phone input{border-radius:0 10px 10px 0}
-select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b5b76' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right 12px center;padding-right:32px}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
+.hero{background:radial-gradient(120% 70% at 50% 0%,#4a2479 0%,#2b1446 62%,#1d0d30 100%);color:#fff;padding:18px 0 28px;text-align:center}
+.tag{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:99px;padding:5px 12px;font-size:11.5px;font-weight:700;letter-spacing:1px}
+.tag:before{content:"";width:7px;height:7px;border-radius:50%;background:#ff5a5a;box-shadow:0 0 0 0 rgba(255,90,90,.7);animation:pulse 1.6s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(255,90,90,0)}100%{box-shadow:0 0 0 0 rgba(255,90,90,0)}}
+.coach-av{width:96px;height:96px;border-radius:50%;margin:16px auto 8px;border:3px solid var(--gold);background:linear-gradient(135deg,#6a3aa6,#f2a516);display:grid;place-items:center;font:700 30px Fraunces;overflow:hidden;color:#fff}
+.coach-av img{width:100%;height:100%;object-fit:cover}
+.coach-name{font-weight:700;font-size:14.5px}
+.coach-role{font-size:12.5px;color:#d9cbe9;margin-bottom:16px}
+.for{font-size:11.5px;font-weight:700;letter-spacing:1.4px;color:#ffd37a;margin-bottom:6px}
+.hero h1{font-size:30px;line-height:1.15;margin-bottom:10px}
+.hero h1 em{font-style:italic;color:var(--gold)}
+.hero .sub{font-size:15px;color:#e8def3;margin:0 auto 16px;max-width:440px}
+.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 10px;font-size:12.5px;color:#e8def3;margin-top:12px}
+.facts b{color:#fff}
+.facts span+span:before{content:"·";margin-right:10px;color:#9f87b8}
+.rating{margin-top:14px;font-size:13px;color:#e8def3}
+.rating b{color:var(--gold)}
+.quote{margin:18px auto 0;max-width:440px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:14px 16px;text-align:left}
+.quote p{font:600 15px/1.45 Fraunces,serif;font-style:italic}
+.quote small{display:block;margin-top:8px;font-size:12px;color:#d9cbe9}
+
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:-18px;position:relative}
+.stats div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 8px;text-align:center;box-shadow:0 8px 24px -16px rgba(43,20,70,.4)}
+.stats b{display:block;font:700 24px Fraunces;color:var(--brand2)}
+.stats small{font-size:12px;color:var(--muted)}
+
+.check{display:grid;gap:8px}
+.check li{list-style:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px 12px 42px;position:relative;font-size:14.5px}
+.check li:before{content:"✓";position:absolute;left:14px;top:12px;width:20px;height:20px;border-radius:50%;background:#e4f6ee;color:var(--ok);font-weight:800;font-size:12px;display:grid;place-items:center}
+
+.steps{display:grid;gap:10px}
+.step{display:grid;grid-template-columns:44px 1fr;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px}
+.step .n{font:700 22px Fraunces;color:var(--gold2)}
+.step h3{font-size:16.5px;margin-bottom:2px}
+.step p{font-size:14px;color:var(--muted)}
+.step .day{display:inline-block;font:700 10.5px Inter,system-ui,sans-serif;letter-spacing:1px;background:var(--soft);color:var(--brand2);border-radius:6px;padding:2px 7px;margin-bottom:4px}
+.outcome{text-align:center;font-weight:700;margin:16px 0}
+
+.myth{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px}
+.myth q{display:block;font:600 16px/1.35 Fraunces,serif;font-style:italic;color:var(--red)}
+.myth p{font-size:14px;margin-top:6px}
+.myth p b{color:var(--ok)}
+
+.car{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 16px 10px;margin:0 -16px;scrollbar-width:none}
+.car::-webkit-scrollbar{display:none}
+.t{flex:0 0 84%;scroll-snap-align:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}
+.t .stars{color:var(--gold);letter-spacing:2px;font-size:13px}
+.t p{font:500 15px/1.5 Fraunces,serif;margin:8px 0 12px}
+.t .who{display:flex;align-items:center;gap:10px;font-size:13px}
+.t .who i{width:34px;height:34px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-style:normal;font-weight:700;color:var(--brand2)}
+.t .who small{display:block;color:var(--muted)}
+.dots{display:flex;justify-content:center;gap:6px;margin-top:4px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--line);transition:width .2s}
+.dots i.on{background:var(--brand2);width:18px;border-radius:4px}
+
+.dark{background:linear-gradient(160deg,#2b1446,#4a2479);color:#fff;border-radius:22px;padding:22px 18px}
+.dark h2{color:#fff}
+.dark .lead{color:#dccdef}
+.bon{display:grid;gap:8px;margin:10px 0 16px}
+.bon div{display:flex;justify-content:space-between;align-items:center;gap:10px;background:rgba(255,255,255,.08);border-radius:12px;padding:11px 12px;font-size:14px}
+.bon s{color:#b9a6cc;font-size:13px;white-space:nowrap}
+.bon .tot{background:rgba(242,165,22,.18);font-weight:700}
+
+.coach{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;text-align:center}
+.coach .coach-av{margin-top:0}
+.coach h3{font-size:21px}
+.coach .role{font-size:13px;color:var(--brand2);font-weight:600;margin-bottom:10px}
+.coach p{font-size:14.5px;color:var(--muted);text-align:left}
+.mission{margin-top:12px;background:var(--soft);border-radius:12px;padding:10px;font-weight:600;font-size:14px}
+
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:8px}
+summary{cursor:pointer;padding:14px 44px 14px 16px;font-weight:600;font-size:15px;list-style:none;position:relative}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";position:absolute;right:16px;top:11px;font-size:22px;color:var(--brand2);transition:transform .2s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{padding:0 16px 14px;font-size:14.5px;color:var(--muted)}
+
+.final{text-align:center}
+.final h2{font-size:27px}
+footer{text-align:center;font-size:11.5px;color:var(--muted);padding:22px 16px 12px}
+
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);
+  padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:flex;align-items:center;gap:10px;transform:translateY(110%);transition:transform .25s}
+.bar.show{transform:none}
+.bar .l{flex:1;min-width:0}
+.bar .p{font-size:13px;font-weight:700}
+.bar .p s{color:var(--muted);font-weight:500}
+.mini{display:flex;align-items:center;gap:3px;font-size:10px;color:var(--muted);margin-top:2px}
+.mini b{background:var(--brand);color:#fff;border-radius:5px;padding:1px 5px;font-size:11.5px;min-width:22px;text-align:center}
+
+.ov{position:fixed;inset:0;background:rgba(20,10,30,.55);z-index:50;display:none;align-items:flex-end;justify-content:center}
+.ov.open{display:flex;animation:fade .2s}
+@keyframes fade{from{opacity:0}}
+.sheet{background:#fff;width:100%;max-width:520px;border-radius:24px 24px 0 0;padding:10px 18px calc(18px + env(safe-area-inset-bottom));max-height:92vh;overflow:auto;animation:up .25s ease-out}
+@keyframes up{from{transform:translateY(40px);opacity:.5}}
+.grab{width:42px;height:5px;border-radius:9px;background:#ddd;margin:0 auto 12px}
+.sh-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.sh-head h3{font-size:24px}
+.x{border:0;background:none;font-size:26px;line-height:1;color:var(--muted);cursor:pointer;padding:2px 6px}
+.when{font-size:13px;color:var(--muted);margin:2px 0 12px}
+.pricebox{display:flex;justify-content:space-between;align-items:center;border:1.5px solid #d9c9ec;background:var(--soft);border-radius:14px;padding:11px 14px;font-weight:700}
+.pricebox s{color:var(--muted);font-weight:500;margin:0 4px}
+.off{background:var(--red);color:#fff;font-size:12px;border-radius:99px;padding:3px 9px}
+.incl{font-size:12.5px;color:var(--muted);margin:8px 0 12px}
+.f{margin-bottom:10px}
+.f input{width:100%;font:16px Inter,system-ui,sans-serif;padding:14px 16px;border:1.5px solid var(--line);border-radius:999px;color:var(--ink);background:#fff}
+.f input:focus{outline:none;border-color:var(--brand2);box-shadow:0 0 0 3px rgba(74,36,121,.14)}
+.ph{display:flex;gap:8px}
+.ph span{display:flex;align-items:center;padding:0 14px;border:1.5px solid var(--line);border-radius:999px;font-weight:700;white-space:nowrap}
+.ph input{flex:1;min-width:0}
+.f .err{display:none;color:var(--red);font-size:12px;margin:4px 0 0 14px}
+.f.bad .err{display:block}
+.f.bad input{border-color:var(--red)}
+.q{font-size:13px;font-weight:600;margin:4px 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
 .chips input{position:absolute;opacity:0;width:0;height:0}
-.chips label{margin:0;font-weight:500;font-size:13px;border:1.5px solid var(--line);border-radius:99px;padding:7px 11px;cursor:pointer;user-select:none}
+.chips label{font-size:13px;border:1.5px solid var(--line);border-radius:99px;padding:7px 11px;cursor:pointer}
 .chips input:checked+label{background:var(--brand);border-color:var(--brand);color:#fff}
 .chips input:focus-visible+label{box-shadow:0 0 0 3px rgba(74,36,121,.25)}
-.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.err{display:none;color:var(--err);font-size:12px;margin-top:3px}
-.field.bad .err{display:block}
-.field.bad input,.field.bad select{border-color:var(--err)}
-.btn{display:block;width:100%;border:0;cursor:pointer;background:linear-gradient(180deg,#ffbd3a,var(--gold-d));color:#2b1446;font-weight:800;font-size:17px;padding:15px 12px;border-radius:12px;box-shadow:0 6px 0 #a96a00;margin-top:6px;transition:transform .08s}
-.btn:active{transform:translateY(3px);box-shadow:0 3px 0 #a96a00}
-.btn small{display:block;font-weight:600;font-size:11.5px;opacity:.85}
-.trust{display:flex;justify-content:center;gap:12px;font-size:11.5px;color:var(--muted);margin-top:10px;flex-wrap:wrap}
-.after{font-size:12px;color:var(--muted);text-align:center;margin-top:6px}
+.secure{text-align:center;font-size:12px;color:var(--muted);margin-top:10px}
+.done{display:none;text-align:center;padding:10px 0 4px}
+.done h3{font-size:23px;margin:6px 0}
+.done p{color:var(--muted);font-size:14.5px}
+.wa{display:block;background:#25d366;color:#fff;text-decoration:none;font:800 16px Inter,system-ui,sans-serif;padding:15px;border-radius:999px;margin-top:14px}
 
-.timer{display:flex;justify-content:center;gap:6px;margin:14px 0 0;color:#fff}
-.timer div{background:rgba(255,255,255,.1);border-radius:8px;min-width:54px;padding:5px 4px;text-align:center}
-.timer b{display:block;font-family:Poppins;font-size:19px;line-height:1.1}
-.timer small{font-size:10px;letter-spacing:.6px;opacity:.75}
-.timer-l{text-align:center;font-size:12px;color:#d9cbe9;margin-top:12px}
+.ov.center{align-items:center;padding:16px}
+.pop{background:#fff;border-radius:24px;padding:22px 18px;max-width:380px;width:100%;text-align:center;position:relative;animation:up .25s}
+.pop .x{position:absolute;right:10px;top:10px}
+.pop .coach-av{width:72px;height:72px;margin:0 auto 8px;font-size:22px}
+.pop h3{font-size:23px;line-height:1.2;margin:4px 0 12px}
+.pop ul{text-align:left;margin:0 auto 14px;max-width:290px}
+.pop li{list-style:none;padding-left:24px;position:relative;font-size:14px;margin:6px 0}
+.pop li:before{content:"✓";position:absolute;left:2px;color:var(--ok);font-weight:800}
+.big-timer{display:flex;justify-content:center;gap:5px;align-items:center;margin:6px 0 14px;font-size:11px;color:var(--muted)}
+.big-timer b{background:var(--brand);color:#fff;border-radius:50%;width:32px;height:32px;display:grid;place-items:center;font-size:13px}
+.nope{display:block;margin-top:10px;background:none;border:0;color:var(--muted);text-decoration:underline;font-size:13px;cursor:pointer;width:100%}
 
-/* ---------- SECTIONS ---------- */
-section{padding:30px 0}
-section h2{font-size:21px;line-height:1.25;text-align:center;margin-bottom:6px}
-.lead{text-align:center;color:var(--muted);font-size:14.5px;margin-bottom:16px}
-.pains{display:grid;gap:8px}
-.pains li{list-style:none;background:#fff;border:1px solid var(--line);border-radius:12px;padding:11px 12px 11px 40px;position:relative;font-size:14.5px}
-.pains li:before{content:"✗";position:absolute;left:14px;top:10px;color:#d24b4b;font-weight:700}
-.day{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:10px}
-.day h3{font-size:15.5px;margin-bottom:6px;color:var(--brand2)}
-.day h3 span{display:inline-block;background:var(--gold);color:#2b1446;font-size:11px;border-radius:6px;padding:2px 7px;margin-right:6px;vertical-align:2px}
-.ticks li{list-style:none;padding-left:24px;position:relative;font-size:14px;margin:5px 0}
-.ticks li:before{content:"✓";position:absolute;left:2px;color:var(--ok);font-weight:800}
-.alt{background:#f5ecdf}
-.coach{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;background:#fff;border-radius:14px;padding:14px;border:1px solid var(--line)}
-.coach .ph{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,#4a2479,#f2a516);display:grid;place-items:center;color:#fff;font:700 28px Poppins}
-.coach h3{font-size:16px}
-.coach p{font-size:13.5px;color:var(--muted)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
-.stats div{background:#fff;border:1px solid var(--line);border-radius:12px;text-align:center;padding:10px 4px}
-.stats b{display:block;font:800 19px Poppins;color:var(--brand2)}
-.stats small{font-size:11.5px;color:var(--muted)}
-.tests{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;margin:0 -16px;padding-left:16px;padding-right:16px}
-.t{flex:0 0 82%;scroll-snap-align:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;font-size:14px}
-.t .stars{color:var(--gold);letter-spacing:2px;font-size:13px}
-.t p{margin:6px 0 8px}
-.t b{font-size:13px}
-.t small{color:var(--muted)}
-.for{display:grid;gap:10px}
-.for div{background:#fff;border-radius:14px;padding:14px;border:1px solid var(--line)}
-.for h3{font-size:15px;margin-bottom:4px}
-.no li:before{content:"✗";color:#d24b4b}
-.bonus{background:linear-gradient(135deg,#2b1446,#4a2479);color:#fff;border-radius:16px;padding:18px}
-.bonus h2{color:#fff}
-.bonus .ticks li:before{color:var(--gold)}
-details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:8px}
-summary{cursor:pointer;padding:13px 40px 13px 14px;font-weight:600;font-size:14.5px;list-style:none;position:relative}
-summary::-webkit-details-marker{display:none}
-summary:after{content:"+";position:absolute;right:14px;top:10px;font-size:20px;color:var(--brand2)}
-details[open] summary:after{content:"–"}
-details p{padding:0 14px 13px;font-size:14px;color:var(--muted)}
-.cta-mid{margin-top:16px}
-footer{text-align:center;font-size:12px;color:var(--muted);padding:20px 16px 10px}
-
-/* ---------- STICKY CTA ---------- */
-.sticky{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 16px calc(10px + env(safe-area-inset-bottom));display:flex;gap:10px;align-items:center;z-index:20;transform:translateY(110%);transition:transform .25s}
-.sticky.show{transform:none}
-.sticky .txt{font-size:12px;line-height:1.3;flex:1}
-.sticky .txt b{display:block;font-size:13.5px}
-.sticky a{flex:0 0 auto;width:auto;margin:0;padding:12px 18px;font-size:15px;text-decoration:none;box-shadow:0 4px 0 #a96a00}
-
-/* ---------- SUCCESS ---------- */
-.done{display:none;text-align:center;padding:8px 2px}
-.done h2{font-size:19px;margin:6px 0}
-.wa{display:block;background:#25d366;color:#fff;text-decoration:none;font:700 16px Poppins;padding:14px;border-radius:12px;margin-top:10px}
-
-@media (min-width:760px){
-  .hero h1{font-size:30px}
-  body{padding-bottom:0}
-}
+@media(min-width:760px){.hero h1{font-size:40px}.stats{grid-template-columns:repeat(4,1fr)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 
-<!-- ============ HERO + FORM (first fold) ============ -->
-<header class="hero" id="register">
+<!-- ================= HERO ================= -->
+<header class="hero">
   <div class="wrap">
-    <div class="topbar">
-      <span class="pill">🌿 Quantum Healing &amp; Manifestation</span>
-      <span class="live">LIVE on Zoom</span>
+    <span class="tag">LIVE ON ZOOM · FRI 20 &amp; SAT 21 NOV</span>
+
+    <!-- TODO: replace initials with Dr. Aravind's photo: <div class="coach-av"><img src="aravind.jpg" alt="Dr. Aravind Padmaraju"></div> -->
+    <div class="coach-av">DA</div>
+    <div class="coach-name">Dr. Aravind Padmaraju</div>
+    <div class="coach-role">Healer &amp; manifestation coach · Founder, Heal with Aravind</div>
+
+    <div class="for">FOR ANYONE STUCK WITH MONEY, HEALTH OR RELATIONSHIP PROBLEMS</div>
+    <h1>The problem isn't your effort. It's the <em>hidden blocks</em> you carry.</h1>
+    <p class="sub">A 2-day live bootcamp where you'll release them step by step with Ho'oponopono, EFT tapping &amp; guided meditation. No experience needed.</p>
+
+    <button class="btn js-open" type="button">Reserve my seat · <s>₹2,999</s> ₹99</button>
+
+    <div class="facts">
+      <span><b>20–21 Nov · 7 PM IST</b></span><span>2 live sessions</span><span>Join from your phone</span><span>Bonuses worth ₹1,999</span>
     </div>
+    <!-- TODO: add a real rating if you have one, e.g. "4.9★ from 1,200+ participants" -->
+    <div class="rating"><b>★★★★★</b> 300+ Warriors already joined</div>
 
-    <h1>Heal Your <em>Money, Health &amp; Relationship</em> Blocks in Just 2 Days</h1>
-    <p class="sub">Live 2-day bootcamp with <b>Dr. Aravind Padmaraju</b>: Ho'oponopono, EFT tapping &amp; guided meditation, step by step. No experience needed.</p>
-    <div class="meta">
-      <span>📅 20 &amp; 21 Nov</span><span>⏰ 7:00 PM IST</span><span>📱 Join on phone</span>
-    </div>
-
-    <div class="form-card">
-      <form id="regForm" novalidate>
-        <h2>Reserve Your Seat for ₹99</h2>
-        <p class="price"><s>₹2,999</s> &nbsp;<b>₹99 only</b> for this batch</p>
-
-        <div class="field" data-f="name">
-          <label for="name">Full Name</label>
-          <input id="name" name="name" autocomplete="name" placeholder="Your full name" required>
-          <div class="err">Please enter your name</div>
-        </div>
-
-        <div class="field" data-f="phone">
-          <label for="phone">WhatsApp Number <small>(Zoom link comes here)</small></label>
-          <div class="phone"><span>🇮🇳 +91</span>
-            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="10" placeholder="10-digit mobile number" required>
-          </div>
-          <div class="err">Enter a valid 10-digit mobile number</div>
-        </div>
-
-        <div class="field" data-f="email">
-          <label for="email">Email <small>(optional)</small></label>
-          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com">
-          <div class="err">Please check your email</div>
-        </div>
-
-        <div class="field" data-f="reason">
-          <label>Why do you want to join?</label>
-          <div class="chips">
-            <input type="radio" name="reason" id="r1" value="Stressed / Overthinking too much"><label for="r1">😣 Stress / Overthinking</label>
-            <input type="radio" name="reason" id="r2" value="Want to fix my relationships"><label for="r2">❤️ Relationships</label>
-            <input type="radio" name="reason" id="r3" value="Need clarity on career or money"><label for="r3">💰 Career / Money</label>
-            <input type="radio" name="reason" id="r4" value="Want to release health issues / emotional pain"><label for="r4">🩺 Health / Emotional pain</label>
-            <input type="radio" name="reason" id="r5" value="Want to fix everything in my life"><label for="r5">✨ Everything</label>
-          </div>
-          <div class="err">Please pick one</div>
-        </div>
-
-        <div class="row2">
-          <div class="field" data-f="serious">
-            <label for="serious">How serious are you?</label>
-            <select id="serious" name="serious" required>
-              <option value="">Select</option>
-              <option>I'm ready to work on myself</option>
-              <option>I genuinely want change</option>
-              <option>Just exploring for now</option>
-            </select>
-            <div class="err">Please select</div>
-          </div>
-          <div class="field" data-f="profession">
-            <label for="profession">Your profession</label>
-            <select id="profession" name="profession" required>
-              <option value="">Select</option>
-              <option>Business Owner / Entrepreneur</option>
-              <option>Shop Owner / Trader</option>
-              <option>Salaried Professional</option>
-              <option>Government Employee</option>
-              <option>Self-employed / Freelancer</option>
-              <option>Doctor / Healthcare Professional</option>
-              <option>Coach / Healer / Therapist</option>
-              <option>Teacher / Professor / Educator</option>
-              <option>Homemaker</option>
-              <option>Student</option>
-              <option>Retired</option>
-            </select>
-            <div class="err">Please select</div>
-          </div>
-        </div>
-
-        <button class="btn" type="submit">Book My Seat for ₹99 →<small>Secure payment · UPI, cards &amp; wallets</small></button>
-        <p class="after">You'll get the Zoom link &amp; bonuses in our private WhatsApp group.</p>
-        <div class="trust"><span>🔒 Your details are safe</span><span>🙏 300+ Warriors joined</span></div>
-      </form>
-
-      <div class="done" id="done">
-        <div style="font-size:40px">🎉</div>
-        <h2>Payment successful. You're in! 🙏</h2>
-        <p style="font-size:14px;color:var(--muted)">One last step: join the WhatsApp group now to get your Zoom link and bonuses. <b>Without this you'll miss the link.</b></p>
-        <!-- TODO: replace with the real WhatsApp group invite link -->
-        <a class="wa" href="https://chat.whatsapp.com/REPLACE_ME" target="_blank" rel="noopener">Join WhatsApp Group →</a>
-      </div>
-    </div>
-
-    <p class="timer-l">Bootcamp starts in</p>
-    <div class="timer" id="timer">
-      <div><b id="d">00</b><small>DAYS</small></div>
-      <div><b id="h">00</b><small>HRS</small></div>
-      <div><b id="m">00</b><small>MINS</small></div>
-      <div><b id="s">00</b><small>SECS</small></div>
+    <!-- TODO: replace with a REAL participant quote (name + city). Do not publish the placeholder. -->
+    <div class="quote">
+      <p>“[Real participant quote: a specific result after the bootcamp, e.g. relationship healed / money unblocked.]”</p>
+      <small>[Name] · [City] · Bootcamp participant</small>
     </div>
   </div>
 </header>
 
-<!-- ============ PAIN ============ -->
-<section>
-  <div class="wrap">
-    <h2>Does this sound like you?</h2>
-    <p class="lead">You've tried hard, yet the same problems keep coming back.</p>
-    <ul class="pains">
-      <li>Money comes in but never stays, and EMIs or debts keep you awake</li>
-      <li>Constant fights or distance with your spouse, family or in-laws</li>
-      <li>Overthinking, anxiety or feeling stuck no matter what you do</li>
-      <li>Health issues that don't improve despite medicines</li>
-      <li>You work hard but your career or business isn't growing</li>
-    </ul>
-    <p class="lead" style="margin-top:14px">These are often <b>hidden emotional &amp; energy blocks</b>. In 2 days, you'll learn how to release them yourself.</p>
+<div class="wrap">
+  <!-- TODO: confirm every number with the client -->
+  <div class="stats">
+    <div><b>300+</b><small>Warriors joined</small></div>
+    <div><b>2</b><small>live, guided days</small></div>
+    <div><b>3</b><small>proven healing tools</small></div>
+    <div><b>₹99</b><small>instead of ₹2,999</small></div>
   </div>
-</section>
-
-<!-- ============ AGENDA ============ -->
-<section class="alt">
-  <div class="wrap">
-    <h2>What you'll learn in 2 days</h2>
-    <p class="lead">Live, practical and guided. You'll do it with Dr. Aravind, not just watch.</p>
-    <div class="day">
-      <h3><span>DAY 1</span>Heal the Past · 20 Nov, 7 PM</h3>
-      <ul class="ticks">
-        <li><b>Ho'oponopono</b>: the 4-line Hawaiian forgiveness practice (similar to our <i>kshama</i> tradition)</li>
-        <li>Find the hidden block behind your money, health or relationship problem</li>
-        <li>Live guided healing meditation</li>
-      </ul>
-    </div>
-    <div class="day">
-      <h3><span>DAY 2</span>Manifest the Future · 21 Nov, 7 PM</h3>
-      <ul class="ticks">
-        <li><b>EFT tapping</b> to release stress &amp; fear in minutes</li>
-        <li>Simple daily manifestation practice that fits a busy routine</li>
-        <li>Live Q&amp;A with Dr. Aravind</li>
-      </ul>
-    </div>
-    <a href="#register" class="btn cta-mid">Book My Seat for ₹99 →</a>
-  </div>
-</section>
-
-<!-- ============ COACH ============ -->
-<section>
-  <div class="wrap">
-    <h2>Meet your guide</h2>
-    <div class="coach">
-      <!-- TODO: replace with real photo: <img src="aravind.jpg" alt="Dr. Aravind Padmaraju"> -->
-      <div class="ph">DA</div>
-      <div>
-        <h3>Dr. Aravind Padmaraju</h3>
-        <p>Healer &amp; manifestation coach. Founder of <i>Heal with Aravind</i>. He makes Ho'oponopono, EFT and meditation simple enough for anyone to practise daily.</p>
-      </div>
-    </div>
-    <!-- TODO: replace with verified numbers from the client -->
-    <div class="stats">
-      <div><b>300+</b><small>Warriors</small></div>
-      <div><b>2</b><small>Live days</small></div>
-      <div><b>₹99</b><small>Only</small></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ TESTIMONIALS ============ -->
-<section class="alt">
-  <div class="wrap">
-    <h2>What participants say</h2>
-    <p class="lead">Swipe →</p>
-    <!-- TODO: replace placeholders with REAL testimonials (name, city, photo/video). Do not publish placeholders. -->
-    <div class="tests">
-      <div class="t"><div class="stars">★★★★★</div><p>[Real testimonial about money / career shift]</p><b>[Name]</b> <small>· [City]</small></div>
-      <div class="t"><div class="stars">★★★★★</div><p>[Real testimonial about relationships]</p><b>[Name]</b> <small>· [City]</small></div>
-      <div class="t"><div class="stars">★★★★★</div><p>[Real testimonial about health / peace of mind]</p><b>[Name]</b> <small>· [City]</small></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHO FOR ============ -->
-<section>
-  <div class="wrap">
-    <h2>Is this for you?</h2>
-    <div class="for">
-      <div><h3>✅ Perfect if you…</h3>
-        <ul class="ticks">
-          <li>Feel stuck in money, health or relationships</li>
-          <li>Are open to simple spiritual &amp; healing practices</li>
-          <li>Can give 2 evenings, fully present</li>
-        </ul></div>
-      <div><h3>❌ Not for you if you…</h3>
-        <ul class="ticks no">
-          <li>Want a magic fix without doing the practice</li>
-          <li>Can't attend live (no recording will be shared)</li>
-        </ul></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ BONUS ============ -->
-<section>
-  <div class="wrap">
-    <div class="bonus">
-      <h2>🎁 Bonuses worth ₹1,999 for live attendees</h2>
-      <!-- TODO: confirm the bonuses with the client -->
-      <ul class="ticks">
-        <li>Guided Ho'oponopono meditation audio</li>
-        <li>Daily healing &amp; manifestation practice sheet</li>
-        <li>Entry to the private WhatsApp community</li>
-      </ul>
-      <a href="#register" class="btn cta-mid">Get My Seat + Bonuses for ₹99 →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FAQ ============ -->
-<section class="alt">
-  <div class="wrap">
-    <h2>Questions?</h2>
-    <details><summary>Why ₹99 and not free?</summary><p>The small fee keeps the group serious, so only committed people join and everyone gets more attention. It covers both live days and all bonuses.</p></details>
-    <details><summary>How do I pay?</summary><p>After you fill the form you go to a secure Razorpay page. Pay by UPI (GPay, PhonePe, Paytm), card or net banking.</p></details>
-    <details><summary>Can I join from my phone?</summary><p>Yes. Just install the Zoom app. The link is sent on WhatsApp after you register.</p></details>
-    <details><summary>Will there be a recording?</summary><p>No. The bootcamp is live and practical, so please block 7 PM IST on both days.</p></details>
-    <details><summary>I've never done meditation or healing. Can I join?</summary><p>Absolutely. Everything is taught step by step. No experience needed.</p></details>
-    <details><summary>Does this conflict with my religion?</summary><p>No. These are forgiveness, breathing and awareness practices that people of all faiths use.</p></details>
-    <a href="#register" class="btn cta-mid">Book My Seat for ₹99 →</a>
-  </div>
-</section>
-
-<footer>© Heal with Aravind · 4D Heal &amp; Manifest Bootcamp<br>Results vary from person to person. This is not a substitute for medical advice.</footer>
-
-<!-- ============ STICKY CTA (mobile) ============ -->
-<div class="sticky" id="sticky">
-  <div class="txt"><b>2-Day Bootcamp · ₹99</b>20–21 Nov · 7 PM IST · Seats filling</div>
-  <a href="#register" class="btn">Book ₹99</a>
 </div>
 
-<script>
-// Google Apps Script web-app URL (ends in /exec). See sheet-script.gs for setup.
-var SHEET_URL = 'https://script.google.com/macros/s/AKfycbyVU5cG4C5Wuf63Q0QIn_bf1rcanr8oUwud9pnUszbQ0WI_US_wGS1QBKrCvNmpNwEQ/exec';
+<!-- ================= MADE FOR YOU IF ================= -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Made for you if</div>
+    <h2>You've tried hard. The same problems keep coming back.</h2>
+    <ul class="check">
+      <li>Money comes in but never stays, and EMIs or debts keep you up at night</li>
+      <li>There are constant fights or distance with your spouse, family or in-laws</li>
+      <li>You overthink everything and can't switch your mind off</li>
+      <li>Health issues don't improve despite treatment</li>
+      <li>You work hard but your career or business isn't growing</li>
+      <li>You want a simple daily practice, not more motivational videos</li>
+    </ul>
+  </div>
+</section>
 
-// Countdown to Day 1: 20 Nov 2026, 7:00 PM IST
+<!-- ================= METHOD ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">The 4D Heal &amp; Manifest path</div>
+    <h2>What Dr. Aravind will take you through live</h2>
+    <p class="lead">Practical and guided. You'll do each practice with him, not just watch.</p>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><div><span class="day">DAY 1</span><h3>Find the root block</h3><p>Spot the hidden emotional pattern behind your money, health or relationship problem.</p></div></div>
+      <div class="step"><div class="n">02</div><div><span class="day">DAY 1</span><h3>Heal with Ho'oponopono</h3><p>The 4-line Hawaiian forgiveness practice (close to our own <i>kshama</i> tradition), done together live.</p></div></div>
+      <div class="step"><div class="n">03</div><div><span class="day">DAY 2</span><h3>Release with EFT tapping</h3><p>Clear stress, fear and old pain in minutes using simple tapping points.</p></div></div>
+      <div class="step"><div class="n">04</div><div><span class="day">DAY 2</span><h3>Manifest daily</h3><p>A 10-minute morning routine to keep you calm and attract abundance, plus live Q&amp;A.</p></div></div>
+    </div>
+    <p class="outcome">You leave with a daily practice you can start the very next morning.</p>
+    <button class="btn js-open" type="button">Reserve my seat · ₹99</button>
+  </div>
+</section>
+
+<!-- ================= MYTHS ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Myths, busted</div>
+    <h2>What's really stopping you from healing</h2>
+    <div class="myth"><q>My problems are just bad luck or karma. Nothing can change.</q><p><b>Truth:</b> Many repeating patterns come from emotions we hold on to. Releasing them changes how you respond and what you attract.</p></div>
+    <div class="myth"><q>Healing needs years of therapy or expensive retreats.</q><p><b>Truth:</b> These practices take 10–15 minutes a day and you can do them at home.</p></div>
+    <div class="myth"><q>This is against my religion.</q><p><b>Truth:</b> Forgiveness, breathing and awareness are part of every faith. Nothing here asks you to change your beliefs.</p></div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Real stories</div>
+    <h2>People who were exactly where you are</h2>
+    <!-- TODO: replace with REAL testimonials (name, city, ideally photo or video). Do not publish placeholders. -->
+    <div class="car" id="car">
+      <div class="t"><div class="stars">★★★★★</div><p>“[Real testimonial about money or career]”</p><div class="who"><i>A</i><div><b>[Name]</b><small>[City]</small></div></div></div>
+      <div class="t"><div class="stars">★★★★★</div><p>“[Real testimonial about relationships or family]”</p><div class="who"><i>B</i><div><b>[Name]</b><small>[City]</small></div></div></div>
+      <div class="t"><div class="stars">★★★★★</div><p>“[Real testimonial about health or peace of mind]”</p><div class="who"><i>C</i><div><b>[Name]</b><small>[City]</small></div></div></div>
+    </div>
+    <div class="dots" id="dots"><i class="on"></i><i></i><i></i></div>
+    <div style="margin-top:16px"><button class="btn js-open" type="button">I want this healing too</button></div>
+  </div>
+</section>
+
+<!-- ================= BONUSES / COMMUNITY ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="dark">
+      <div class="eyebrow" style="color:#ffd37a">You won't do this alone</div>
+      <h2>Everything you get for ₹99</h2>
+      <p class="lead">Plus a private WhatsApp community of Warriors healing together.</p>
+      <!-- TODO: confirm bonuses and their values with the client -->
+      <div class="bon">
+        <div>2 live sessions with Dr. Aravind<s>₹2,999</s></div>
+        <div>Guided Ho'oponopono meditation audio<s>₹999</s></div>
+        <div>Daily healing &amp; manifestation sheet<s>₹499</s></div>
+        <div>Private WhatsApp community access<s>₹501</s></div>
+        <div class="tot">Today you pay<span>₹99</span></div>
+      </div>
+      <button class="btn js-open" type="button">Reserve my seat · ₹99</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COACH ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">Your guide</div>
+    <div class="coach">
+      <div class="coach-av">DA</div>
+      <h3>Dr. Aravind Padmaraju</h3>
+      <div class="role">Founder, Heal with Aravind</div>
+      <!-- TODO: replace with Dr. Aravind's real story, credentials and years of practice -->
+      <p>Dr. Aravind makes Ho'oponopono, EFT and meditation simple enough for anyone to practise daily, whether you're a homemaker, a professional or a business owner. His bootcamps focus on doing the work live, so you leave with something you can use right away.</p>
+      <div class="mission">[His mission statement, e.g. "Help 1 lakh families heal and live in abundance."]</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2>Before you save your seat</h2>
+    <details><summary>Why ₹99 and not free?</summary><p>The small fee keeps the group serious, so only committed people join and everyone gets more attention. It covers both live days and all bonuses.</p></details>
+    <details><summary>How do I pay?</summary><p>Tap "Reserve my seat", enter your details and pay securely with Razorpay by UPI (GPay, PhonePe, Paytm), card or net banking. You never leave this page.</p></details>
+    <details><summary>I've never done meditation or healing. Can I join?</summary><p>Yes. Everything is taught step by step. No experience needed.</p></details>
+    <details><summary>Can I join from my phone?</summary><p>Yes. Install the Zoom app. The link is sent on WhatsApp after you pay.</p></details>
+    <details><summary>Do I need to join live? Is there a recording?</summary><p>Please join live. It's practical and interactive, and no recording will be shared. Block 7 PM IST on 20 and 21 November.</p></details>
+    <!-- TODO: confirm the language with the client -->
+    <details><summary>Which language?</summary><p>Simple English with Hindi where helpful.</p></details>
+    <details><summary>Does this conflict with my religion?</summary><p>No. These are forgiveness, breathing and awareness practices used by people of all faiths.</p></details>
+  </div>
+</section>
+
+<section class="final" style="padding-top:0">
+  <div class="wrap">
+    <h2>Your life can feel lighter by Saturday night.</h2>
+    <p class="lead">Two evenings. One small step. ₹99.</p>
+    <button class="btn js-open" type="button">Reserve my seat · <s>₹2,999</s> ₹99</button>
+    <p class="btn-note">🔒 Secure Razorpay checkout · UPI, cards, net banking</p>
+  </div>
+</section>
+
+<footer>© Heal with Aravind · 4D Heal &amp; Manifest Bootcamp<br>Results vary from person to person. This is not a substitute for medical advice. Not part of Meta, Facebook or Google.</footer>
+
+<!-- ================= STICKY BAR ================= -->
+<div class="bar" id="bar">
+  <div class="l">
+    <div class="p"><s>₹2,999</s> ₹99 · Live bootcamp</div>
+    <div class="mini">Starts in <b data-t="d">00</b>D <b data-t="h">00</b>H <b data-t="m">00</b>M <b data-t="s">00</b>S</div>
+  </div>
+  <button class="btn sm js-open" type="button">Reserve seat</button>
+</div>
+
+<!-- ================= CHECKOUT SHEET ================= -->
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="shTitle">
+  <div class="sheet">
+    <div class="grab"></div>
+    <form id="regForm" novalidate>
+      <div class="sh-head"><h3 id="shTitle">Reserve your seat</h3><button class="x js-close" type="button" aria-label="Close">×</button></div>
+      <p class="when">Fri 20 &amp; Sat 21 November · 7:00 PM IST · live on Zoom</p>
+      <div class="pricebox"><span>Today <s>₹2,999</s> ₹99</span><span class="off">97% off</span></div>
+      <p class="incl">Included: bonuses worth ₹1,999 + WhatsApp community</p>
+
+      <div class="f" data-f="name"><input id="name" name="name" autocomplete="name" placeholder="Full name"><div class="err">Please enter your name</div></div>
+      <div class="f" data-f="email"><input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Email address (optional)"><div class="err">Please check your email</div></div>
+      <div class="f" data-f="phone"><div class="ph"><span>🇮🇳 +91</span><input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="10" placeholder="WhatsApp number"></div><div class="err">Enter a valid 10-digit mobile number</div></div>
+
+      <div class="q">What do you most want to heal? <span style="font-weight:400;color:var(--muted)">(optional)</span></div>
+      <div class="chips">
+        <input type="radio" name="reason" id="r1" value="Stressed / Overthinking too much"><label for="r1">😣 Stress</label>
+        <input type="radio" name="reason" id="r2" value="Want to fix my relationships"><label for="r2">❤️ Relationships</label>
+        <input type="radio" name="reason" id="r3" value="Need clarity on career or money"><label for="r3">💰 Money / Career</label>
+        <input type="radio" name="reason" id="r4" value="Want to release health issues / emotional pain"><label for="r4">🩺 Health</label>
+        <input type="radio" name="reason" id="r5" value="Want to fix everything in my life"><label for="r5">✨ Everything</label>
+      </div>
+
+      <button class="btn" type="submit">Continue to pay ₹99</button>
+      <p class="secure">🔒 Secure checkout · UPI, cards, net banking</p>
+    </form>
+
+    <div class="done" id="done">
+      <div style="font-size:44px">🎉</div>
+      <h3>Payment successful. You're in! 🙏</h3>
+      <p>One last step: join the WhatsApp group now. Your Zoom link and bonuses are shared there. <b>Without this you'll miss the link.</b></p>
+      <!-- TODO: replace with the real WhatsApp group invite link -->
+      <a class="wa" href="https://chat.whatsapp.com/REPLACE_ME" target="_blank" rel="noopener">Join WhatsApp Group →</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= EXIT POPUP ================= -->
+<div class="ov center" id="exit" role="dialog" aria-modal="true" aria-labelledby="exTitle">
+  <div class="pop">
+    <button class="x js-close" type="button" aria-label="Close">×</button>
+    <div class="coach-av">DA</div>
+    <div class="eyebrow">Before you go</div>
+    <h3 id="exTitle">Your healing can start this Friday, 20 November</h3>
+    <ul>
+      <li>Find the hidden block behind your problem</li>
+      <li>Learn Ho'oponopono &amp; EFT live</li>
+      <li>Leave with a 10-minute daily practice</li>
+    </ul>
+    <div class="big-timer">Starts in <b data-t="d">00</b>D <b data-t="h">00</b>H <b data-t="m">00</b>M <b data-t="s">00</b>S</div>
+    <button class="btn js-open" type="button">Reserve my seat · <s>₹2,999</s> ₹99</button>
+    <p class="btn-note">Limited seats: it's live and interactive.</p>
+    <button class="nope js-close" type="button">No thanks, I'll stay where I am</button>
+  </div>
+</div>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+// Google Apps Script web-app URL (ends in /exec). See ../aravind-india/sheet-script.gs.
+var SHEET_URL = 'https://script.google.com/macros/s/AKfycbyVU5cG4C5Wuf63Q0QIn_bf1rcanr8oUwud9pnUszbQ0WI_US_wGS1QBKrCvNmpNwEQ/exec';
+var FUNNEL_ID = 'ARVIND99';   // A2 funnel (Funnels tab) → lead tab + message sequence
+var START = new Date('2026-11-20T19:00:00+05:30').getTime();
+
+/* countdown (every [data-t]) */
 (function(){
-  var t=new Date('2026-11-20T19:00:00+05:30').getTime();
   function pad(n){return String(n).padStart(2,'0')}
   function tick(){
-    var d=Math.max(0,t-Date.now());
-    document.getElementById('d').textContent=pad(Math.floor(d/864e5));
-    document.getElementById('h').textContent=pad(Math.floor(d/36e5)%24);
-    document.getElementById('m').textContent=pad(Math.floor(d/6e4)%60);
-    document.getElementById('s').textContent=pad(Math.floor(d/1e3)%60);
+    var d=Math.max(0,START-Date.now()), v={d:Math.floor(d/864e5),h:Math.floor(d/36e5)%24,m:Math.floor(d/6e4)%60,s:Math.floor(d/1e3)%60};
+    document.querySelectorAll('[data-t]').forEach(function(el){el.textContent=pad(v[el.dataset.t])});
   }
   tick();setInterval(tick,1000);
 })();
 
-// Sticky CTA: show once the form scrolls out of view
-(function(){
-  var s=document.getElementById('sticky'),f=document.querySelector('.form-card');
-  if(!('IntersectionObserver' in window))return;
-  new IntersectionObserver(function(e){s.classList.toggle('show',!e[0].isIntersecting)}).observe(f);
+/* sheet + exit popup */
+var ov=document.getElementById('ov'), ex=document.getElementById('exit'), paid=false, exitShown=false;
+function lock(on){document.body.style.overflow=on?'hidden':''}
+function openSheet(){ex.classList.remove('open');ov.classList.add('open');lock(true);setTimeout(function(){document.getElementById('name').focus()},250)}
+function closeAll(){ov.classList.remove('open');ex.classList.remove('open');lock(false)}
+document.querySelectorAll('.js-open').forEach(function(b){b.addEventListener('click',openSheet)});
+document.querySelectorAll('.js-close').forEach(function(b){b.addEventListener('click',closeAll)});
+[ov,ex].forEach(function(o){o.addEventListener('click',function(e){if(e.target===o)closeAll()})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAll()});
+
+function showExit(){
+  if(exitShown||paid||ov.classList.contains('open'))return;
+  try{if(sessionStorage.getItem('exitShown'))return;sessionStorage.setItem('exitShown','1')}catch(e){}
+  exitShown=true;ex.classList.add('open');lock(true);
+}
+document.addEventListener('mouseout',function(e){if(!e.relatedTarget&&e.clientY<10)showExit()});   // desktop: mouse leaves the top
+(function(){                                                                                        // mobile: fast scroll back up after reading
+  var maxY=0,lastY=0;
+  addEventListener('scroll',function(){var y=scrollY;maxY=Math.max(maxY,y);if(maxY>1600&&lastY-y>120&&y<maxY*.6)showExit();lastY=y},{passive:true});
+  setTimeout(showExit,75000);                                                                       // or after 75 s on the page
 })();
 
-// Phone: digits only
-document.getElementById('phone').addEventListener('input',function(){this.value=this.value.replace(/\D/g,'').slice(0,10)});
+/* sticky bar after hero */
+(function(){
+  var bar=document.getElementById('bar'),hero=document.querySelector('.hero');
+  if(!('IntersectionObserver' in window)){bar.classList.add('show');return}
+  new IntersectionObserver(function(e){bar.classList.toggle('show',!e[0].isIntersecting)}).observe(hero);
+})();
 
-// Validation + submit
+/* carousel dots */
+(function(){
+  var car=document.getElementById('car'),dots=[].slice.call(document.querySelectorAll('#dots i'));
+  car.addEventListener('scroll',function(){
+    var i=Math.round(car.scrollLeft/(car.firstElementChild.offsetWidth+10));
+    dots.forEach(function(d,j){d.classList.toggle('on',j===i)});
+  },{passive:true});
+})();
+
+/* form → sheet (Pending) → Razorpay popup → verify (Paid) */
+document.getElementById('phone').addEventListener('input',function(){this.value=this.value.replace(/\D/g,'').slice(0,10)});
 document.getElementById('regForm').addEventListener('submit',function(e){
   e.preventDefault();
   var f=this,ok=true,first=null;
-  function check(key,valid){
-    var el=f.querySelector('[data-f="'+key+'"]');
-    el.classList.toggle('bad',!valid);
-    if(!valid){ok=false;first=first||el}
-  }
+  function check(key,valid){var el=f.querySelector('[data-f="'+key+'"]');el.classList.toggle('bad',!valid);if(!valid){ok=false;first=first||el}}
   var email=f.email.value.trim();
   check('name',f.name.value.trim().length>1);
-  check('phone',/^[6-9]\d{9}$/.test(f.phone.value));
   check('email',!email||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email));
-  check('reason',!!f.querySelector('input[name=reason]:checked'));
-  check('serious',!!f.serious.value);
-  check('profession',!!f.profession.value);
-  if(!ok){first.scrollIntoView({behavior:'smooth',block:'center'});return}
+  check('phone',/^[6-9]\d{9}$/.test(f.phone.value));
+  if(!ok){first.querySelector('input').focus();return}
 
-  var q=new URLSearchParams(location.search);
+  var q=new URLSearchParams(location.search), r=f.querySelector('input[name=reason]:checked');
   var data={
-    name:f.name.value.trim(), phone:'+91'+f.phone.value, email:email,
-    reason:f.querySelector('input[name=reason]:checked').value,
-    serious:f.serious.value, profession:f.profession.value,
+    name:f.name.value.trim(), phone:'+91'+f.phone.value, email:email, reason:r?r.value:'',
     utm_source:q.get('utm_source')||'', utm_medium:q.get('utm_medium')||'',
     utm_campaign:q.get('utm_campaign')||'', utm_content:q.get('utm_content')||'',
-    page:location.href,
-    funnel_id:'ARVIND99'   // A2 funnel (Funnels tab) → decides the lead tab + message sequence
+    page:location.href, funnel_id:FUNNEL_ID
   };
 
-  var btn=f.querySelector('button[type=submit]'), label=btn.firstChild.nodeValue;
-  function busy(on,txt){ btn.disabled=on; btn.firstChild.nodeValue=on?txt:label; }
-  function fail(msg){ busy(false); alert(msg||'Something went wrong. Please try again.'); }
+  var btn=f.querySelector('button[type=submit]'), label=btn.textContent;
+  function busy(on,txt){btn.disabled=on;btn.textContent=on?txt:label}
+  function fail(msg){busy(false);alert(msg||'Something went wrong. Please try again.')}
   function success(){
-    // TODO: fire Meta Pixel Purchase event here once the pixel is added, e.g. fbq('track','Purchase',{value:99,currency:'INR'});
-    f.style.display='none';
-    document.getElementById('done').style.display='block';
-    document.querySelector('.form-card').scrollIntoView({behavior:'smooth',block:'start'});
+    paid=true;
+    // TODO: fire Meta Pixel Purchase event once the pixel is added: fbq('track','Purchase',{value:99,currency:'INR'});
+    f.style.display='none';document.getElementById('done').style.display='block';
   }
-  function api(params){
-    return fetch(SHEET_URL+'?'+new URLSearchParams(params)).then(function(r){return r.json()});
-  }
+  function api(p){return fetch(SHEET_URL+'?'+new URLSearchParams(p)).then(function(x){return x.json()})}
 
-  busy(true,'Opening secure payment… ');
-  // 1) Save lead as Pending + create ₹99 Razorpay order (amount is fixed in the Apps Script)
+  busy(true,'Opening secure payment…');
   api({action:'order',data:JSON.stringify(data)}).then(function(o){
-    if(!o.ok) return fail(o.error);
-    // 2) Razorpay popup
+    if(!o.ok)return fail(o.error);
     var rzp=new Razorpay({
       key:o.key, order_id:o.order_id, amount:o.amount, currency:'INR',
       name:'Heal with Aravind', description:'4D Heal & Manifest Bootcamp · 2 days live',
       prefill:{name:data.name, contact:data.phone, email:data.email||undefined},
       notes:{lead:o.lead}, theme:{color:'#2b1446'},
-      modal:{ondismiss:function(){ busy(false); }},
-      handler:function(r){
-        busy(true,'Confirming payment… ');
-        // 3) Verify signature server-side and mark the Sheet row Paid
-        api({action:'verify',funnel:data.funnel_id,order:r.razorpay_order_id,payment:r.razorpay_payment_id,sig:r.razorpay_signature})
-          .then(function(v){ v.ok ? success() : fail('Payment received but not confirmed. Please WhatsApp us with payment ID '+r.razorpay_payment_id); },
-                function(){ success(); }); // paid; verification can be checked later in Razorpay
+      modal:{ondismiss:function(){busy(false)}},
+      handler:function(res){
+        busy(true,'Confirming payment…');
+        api({action:'verify',funnel:FUNNEL_ID,order:res.razorpay_order_id,payment:res.razorpay_payment_id,sig:res.razorpay_signature})
+          .then(function(v){v.ok?success():fail('Payment received but not confirmed. Please WhatsApp us with payment ID '+res.razorpay_payment_id)},
+                function(){success()});
       }
     });
-    rzp.on('payment.failed',function(){ busy(false); });
+    rzp.on('payment.failed',function(){busy(false)});
     rzp.open();
-  }, function(){ fail('Could not reach the server. Check your internet and try again.'); });
+  },function(){fail('Could not reach the server. Check your internet and try again.')});
 });
 </script>
-<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </body>
 </html>
